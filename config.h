@@ -1,17 +1,17 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "Nunito:size=10" };
-static const char dmenufont[]       = "Nunito:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char dmenufont[]       = "monospaced:size=10";
+static const char col_gray1[]       = "#0d0f15";  // bar background color same with terminal
+static const char col_gray2[]       = "#2e3440";  // not-active window border
+static const char col_gray3[]       = "#d8dee9";  // bar text color 
+static const char col_gray4[]       = "#eceff4";  // window text color 
+static const char col_cyan[]        = "#5e81ac";  // atctive - blue 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
@@ -19,7 +19,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "", "", ""};
 
 static const Rule rules[] = {
 	/* xprop(1):
